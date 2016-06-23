@@ -29,6 +29,8 @@ public class FragmentA extends HartBaseFragment
         enableNav();
         enableFab();
 
+        setFabIcon(android.R.drawable.bottom_bar);
+
         return v;
     }
 }

@@ -32,6 +32,11 @@ public class HartBaseFragment extends Fragment
         ((HartBaseActivity) getActivity()).postDelayed(runnable, delay);
     }
 
+    public void setFabIcon(int imageID)
+    {
+        ((HartBaseActivity) getActivity()).setFabIcon(imageID);
+    }
+
 
     protected void disableNav()
     {

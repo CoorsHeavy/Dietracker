@@ -85,20 +85,24 @@ public class HartBaseActivity extends AppCompatActivity
         navDrawerRecycler.setAdapter(adapter);
 
 
-//        fab.setOnClickListener(new View.OnClickListener()
-//        {
-//            @Override
-//            public void onClick(View view)
-//            {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        fab.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Events.getBus().post(new FabEvent());
+            }
+        });
     }
 
     public HartBaseNavAdapter getNavAdapter()
     {
         return adapter;
+    }
+
+    public void setFabIcon(int imageID)
+    {
+        fab.setImageResource(imageID);
     }
 
 
@@ -149,14 +153,6 @@ public class HartBaseActivity extends AppCompatActivity
                 getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                 toggle.setDrawerIndicatorEnabled(false);
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//                toggle.setToolbarNavigationClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v)
-//                    {
-//                        onBackPressed();
-//                    }
-//                });
-
             }
             else
             {
