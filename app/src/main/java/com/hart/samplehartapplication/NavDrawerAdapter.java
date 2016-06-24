@@ -43,7 +43,7 @@ public class NavDrawerAdapter extends HartBaseNavAdapter
 
     private void setItemListener(View view, int type)
     {
-        if(type == ITEM)
+        //if(type == ITEM)
         {
             view.setOnClickListener(itemListener);
         }

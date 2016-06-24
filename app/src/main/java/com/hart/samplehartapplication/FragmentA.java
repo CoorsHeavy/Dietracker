@@ -28,9 +28,16 @@ public class FragmentA extends HartBaseFragment
 
         enableNav();
 
-        enableFab();
+
         setFabIcon(android.R.drawable.ic_dialog_alert);
 
         return v;
+    }
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        enableFab();
     }
 }

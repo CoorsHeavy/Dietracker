@@ -27,9 +27,15 @@ public class HomeFragment extends HartBaseFragment
         ButterKnife.bind(this, v);
 
         enableNav();
-        enableFab();
         setFabIcon(android.R.drawable.ic_dialog_email);
 
         return v;
+    }
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        enableFab();
     }
 }

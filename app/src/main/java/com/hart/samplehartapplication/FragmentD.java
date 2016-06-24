@@ -27,9 +27,15 @@ public class FragmentD extends HartBaseFragment
         ButterKnife.bind(this, v);
 
         fullDisableNav();
-        enableFab();
 
         return v;
+    }
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        enableFab();
     }
 }
 
