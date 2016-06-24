@@ -84,6 +84,7 @@ public class HartBaseFragment extends Fragment
     public void onPause()
     {
         super.onPause();
+        disableFab();
         Events.getBus().unregister(this);
     }
 }

@@ -28,7 +28,6 @@ public class HomeFragment extends HartBaseFragment
 
         enableNav();
         enableFab();
-
         setFabIcon(android.R.drawable.ic_dialog_email);
 
         return v;

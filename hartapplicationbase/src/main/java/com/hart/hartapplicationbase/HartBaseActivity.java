@@ -93,6 +93,8 @@ public class HartBaseActivity extends AppCompatActivity
                 Events.getBus().post(new FabEvent());
             }
         });
+
+        hideFab();
     }
 
     public HartBaseNavAdapter getNavAdapter()

@@ -27,7 +27,6 @@ public class FragmentB extends HartBaseFragment
         ButterKnife.bind(this, v);
 
         enableNav();
-        disableFab();
 
         return v;
     }

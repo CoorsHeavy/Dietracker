@@ -27,9 +27,9 @@ public class FragmentA extends HartBaseFragment
         ButterKnife.bind(this, v);
 
         enableNav();
-        enableFab();
 
-        setFabIcon(android.R.drawable.bottom_bar);
+        enableFab();
+        setFabIcon(android.R.drawable.ic_dialog_alert);
 
         return v;
     }
